@@ -1,10 +1,10 @@
 namespace :caller do
   desc "TODO"
   task search: :environment do
-    puts 'success -----------------------------------------------------------------------------------------'
-    value = [15.minutes, 1, 1.hour, 2.hours].sample
-    puts "sleeping: #{value}"
-    sleep(value)
+    # puts 'success -----------------------------------------------------------------------------------------'
+    # value = [15.minutes, 1, 1.hour, 2.hours].sample
+    # puts "sleeping: #{value}"
+    # sleep(value)
 
     # users = User.where(done: false).sample(10)
 

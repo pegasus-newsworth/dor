@@ -1,4 +1,6 @@
 class DorController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: :home
+
   def home; end
 
   def caller

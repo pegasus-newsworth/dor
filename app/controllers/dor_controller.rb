@@ -9,6 +9,7 @@ class DorController < ApplicationController
     message = JSON.parse(request.body.read)["message"]
     return unless message == "hi"
     puts "successful trigger"
+    actioned
     render json: { response: "received" }, status: :accepted
   end
 

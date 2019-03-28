@@ -9,5 +9,6 @@ class DorController < ApplicationController
     return unless message == "hi"
     puts "successful trigger"
     system("heroku run rake caller:search")
+    render json: { response: "received" }, status: :accepted
   end
 end
